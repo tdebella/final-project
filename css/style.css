@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato";
+  box-sizing: border-box;
+  list-style: none;
+}
+/* header styling start */
+#header {
+  width: 100%;
+  height: 15vh;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+  border-radius: 50px;
+}
+.logo {
+  float: left;
+  height: 13vh;
+  width: 13vh;
+  margin: 18px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  position: absolute;
+  color: #000;
+}
+.logo ul > li > a.brand {
+  position: absolute;
+  top: 7rem;
+  padding-left: 175px;
+}
+.brand {
+  margin: -15px;
+  font-size: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+a.brand:hover {
+  color: greenyellow;
+}
+.navbar {
+  width: 80%;
+  padding: 40px 0;
+  justify-content: center;
+  display: flex;
+  top: 0;
+  float: right;
+}
+.navbar ul {
+  float: right;
+  display: flex;
+  padding: 0 30px;
+}
+.navbar ul li {
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+.navbar ul li a {
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-right: 40px;
+  color: #fff;
+  float: right;
+  justify-content: space-between;
+}
+.navbar ul li a:hover {
+  background-color: #ff4321;
+  border-bottom: 4px solid #000;
+}
+.btn {
+  background: #ff4321;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background: transparent;
+  color: #0b0c0b;
+  border: 9px solid #ff4321;
+}
+.fa {
+  height: 40px;
+  color: rgb(248, 6, 6);
+  border-top-left-radius: 5px;
+}
+li a {
+  text-decoration: none;
+}
+/* header styling end */
+
+/* content styling start*/
+#home {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 241, 235);
+  padding-top: 5%;
+}
+.info {
+  float: left;
+  margin: 50px;
+  font-size: 2rem;
+  text-align: center;
+  width: 75%;
+  height: 100%;
+  color: #000;
+}
+.info {
+  margin: 0 auto;
+  margin-top: 10%;
+  float: left;
+}
+.info h1 {
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 2rem;
+}
+.info h2 {
+  font-size: 45px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+.info p {
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+.info span {
+  color: tomato;
+}
+.page-links {
+  text-align: left;
+  letter-spacing: 0.15rem;
+  height: 30%;
+  width: 25%;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.page-links a {
+  color: blue;
+  border-radius: 50px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.page-links a:hover {
+  background-color: green;
+}
+.page-links .btn {
+  color: #000;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+
+/* responsiveness - breakpoints*/
+/* @media all and (min-width: 800) {             //for all devices
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: blue;
+  }
+} */
+
+/* @media all and (min-width: 500px) {    
+    body{
+        color:aqua;
+    }
+/* } */
+
+/* @media (min-width: 500px) {
+    body{
+        color:aqua;
+    }
+} */
+
+/* @media print {      // for printer only
+    body {
+        color:aqua;
+    }
+}
+body{
+    color:red;        // it (the red) overrides the aqua
+} */
+/* content styling end*/
+
+/* footer styling start */
+#footer {
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  background-color: black;
+  color: #fff;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+  border-radius: 50px;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+#footer .copyRight {
+  width: 50%;
+  left: 45%;
+  padding-top: 10px;
+  font-weight: 600;
+  padding-right: 180px;
+  font-size: 25px;
+  margin-top: 25px;
+}
+.copyRight p {
+  color: white;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 25%;
+}
+#footer .social {
+  width: 50%;
+  font-size: 70px;
+  font-weight: 700;
+  float: right;
+  display: flex;
+  letter-spacing: 30px;
+  margin-top: -100px;
+  border-radius: 50%;
+}
+.social a {
+  font-size: 50px;
+  margin-right: 20px;
+}
+.fa-facebook-f {
+  color: blue;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-github-square {
+  color: blueviolet;
+}
+.fa-linkedin {
+  color: rgb(10, 100, 156);
+}
+.social a:hover {
+  color: green;
+  opacity: 0.9;
+}
+/* footer styling end */
