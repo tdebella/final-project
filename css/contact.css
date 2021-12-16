@@ -132,6 +132,9 @@ li a {
   box-shadow: 3px 10px;
   line-height: 1.6;
 }
+.clearfix {
+  clear: both;
+}
 .heading h1 {
   font-size: 4rem;
   letter-spacing: 7px;
